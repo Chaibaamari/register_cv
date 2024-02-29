@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+}
+
+:root{
+    --mainColor: #E2BFB3;
+    --bodyColor:#FEFBF6;
+    --dayColor:#B3A398;
+}
+body{
+    background-color: var(--bodyColor)
+}
+/* START  the information */
+.title{
+    color: rgb(18, 39, 18);
+    text-align: center;
+    margin: 10px 10px;
+}
+.information{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.information form{
+    margin-top: 10px;
+    border: 2px solid rgb(22, 45, 11);
+}
+div .name {
+    margin: 10px;
+}
+div .name label{
+    margin: 0;
+}
+#name{
+    background-color:var(--mainColor);
+    margin-left: 25px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+div .Last_Name{
+    margin: 10px;
+}
+div .Last_Name label{
+    margin: 0;
+}
+div .sexe{
+    margin: 20px 10px;
+}
+.sexe_hf{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+div .Date{
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+    text-align: center;
+}
+div .Date select{
+    margin-top: -8px;
+    width: 100px;
+    padding: 5px;
+    gap: 7px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: var(--dayColor);
+}
+
+@media(max-width : 469px) {
+    /* Medium */
+    div .Date{
+        display: grid;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+    div .Date label{
+        display: none;
+    }
+}
+div .lieu
+{
+margin: 10px;
+}
+
+div .nbr_f_s
+{   
+    margin: 10px; }
+
+#nbr_f_s{
+    background-color:#B5C0D0;
+    margin-left: 25px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+div .text_area label{
+    padding: 10px;
+}
+#textarea{
+    background-color:#B5C0D0;
+    margin-left: 25px;
+    padding: 19px;
+    width: 70%;
+    margin-top: 12px;
+    border: 1px solid black;
+    transition: 0.6s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+#textarea:hover{
+    background-color: #B3A398;
+    
+}
+@media(max-width : 469px) {
+    /* Medium */
+    #textarea{
+        width: 80%;
+    }
+}
+div .phone_number{
+    padding: 10px;
+}
+div.E_mail{
+    margin-bottom: 20px;
+    padding: 9px;
+}
+/* END */
+/* START THE LOGIN */
+.dentification{
+    padding: 10px;
+}
+.dentification P{
+    padding: 7px;
+    text-align: center;
+    background-color: rgb(49, 68, 60);
+    color: #FEFBF6;
+}
+
+.dentification form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    width: 100%;
+}
+form .user_name{
+    padding: 10px;
+}
+.user_name input{
+    background-color: rgba(201, 225, 232, 0.318);
+    padding: 10px;
+    border: 2px solid rgba(9, 9, 9, 0.825);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.password{
+    margin: 20px 20px
+
+}
+.password input{
+    background-color: rgba(201, 225, 232, 0.318);
+    padding: 10px;
+    border: 2px solid rgba(9, 9, 9, 0.825);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+form button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 7px;
+    
+    border-radius: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+form button:hover{
+    background-color: lightsalmon;
+    width: 100%;
+}
